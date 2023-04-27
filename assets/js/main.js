@@ -26,14 +26,12 @@ function convertPokemonToHTML(pokemon) {
 
 const pokemonList = document.getElementById('pokemonList')
 
-fetch(url)
-    .then((response) => { return response.json()})
-    .then((jsonBody) => jsonBody.results)
-    .then((pokemons) => {
+pokeApi.getPokemons().then((pokemons = []) => {
 
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i]
-            pokemonList.innerHTML += convertPokemonToHTML(pokemon);
-        }
+    const newPokemonList = pokemons.map((pokemon) => {
+        return convertPokemonToHTML(pokemon)
     })
-    .catch((error) => console.log(error))
+
+    const novoHTML = newPokemonList.join('')
+    pokemonList.innerHTML += novoHTML
+})
