@@ -22,7 +22,7 @@
     background-color: #678fee;
 }
 
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 
@@ -146,7 +146,7 @@
     color: #fff;
 }
 
-/*@media screen and (max-width:380px){
+@media screen and (max-width:380px){
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
@@ -162,4 +162,4 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}*/
+}
