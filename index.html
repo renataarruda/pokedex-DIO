@@ -26,14 +26,29 @@
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/pokedex.css" />
   </head>
+
   <body>
     <section class="content">
       <h1>Pokedex</h1>
-
+       
       <ol id="pokemonList" class="pokemons"></ol>
+      <!--
+        <li class="pokemon">
+          <span class="number"></span>
+          <span class="name"></span>
+
+          <div class="detail">
+            <ol class="types">
+              <li class="type"></li>
+            </ol>
           </div>
         </li>
-      </ol>
+      -->
+    </ol>
+
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Load More</button>
+      </div>
     </section>
 
     <script src="/assets/js/pokemon-model.js"></script>
