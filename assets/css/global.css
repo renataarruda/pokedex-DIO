@@ -4,14 +4,19 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: #d5e4e9;
+    text-align: center;
+}
+
+h1 {
+    color: #2e3057;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #f5fbfb;;
 }
 
 @media screen and (min-width:992px){
